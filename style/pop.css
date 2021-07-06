@@ -1,0 +1,76 @@
+/* pop button to top */
+.pop_up_to_top{
+background: #fff;
+width: 60px;
+height:60px;
+position: fixed;
+right: 30px;
+cursor: pointer;
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.4);
+transition: all 0.5s;
+display: none;
+}
+
+.pop_up_to_top.active{
+display: flex;
+animation: arrowtop 0.7s ease-in-out ;
+bottom: 50px;
+}
+
+@keyframes arrowtop{
+    from{
+        bottom: -100px;
+    }
+    to{
+        bottom: 50px;
+    }
+}
+
+.pop_up_to_top:hover{
+box-shadow: 0px 2px 12px 3px rgba(0, 0, 0, 0.4);
+}
+
+.pop_up_to_top svg{
+width: 50px;
+height:50px;
+fill: rgb(207, 113, 113);
+transition: all 0.3s ease-in-out;
+}
+
+.pop_up_to_top:hover svg{
+fill: rgb(175, 69, 69);
+transform: translateY(-15px);
+}
+
+
+/* last news */
+.last_news{
+margin-top: 5px;
+width: 100%;
+background-color: rgb(255, 124, 124);
+height: 40px;
+display: flex;
+align-items: center;
+overflow: hidden;
+user-select: none;
+cursor: pointer;
+}
+
+.news_now{
+min-width: 100%;
+font-size: 2em;
+padding-left: 20px;
+animation: slideLastNew 20.5s ease-in-out 1s infinite;
+}
+
+@keyframes slideLastNew{
+0%{transform: translateX(0%);}
+20%{transform: translateX(-100%) ;}
+40%{transform: translateX(-200%) ; }
+60%{transform: translateX(-300%);}
+80%{transform: translateX(-400%);}
+100%{transform: translateX(-500%);}
+}

@@ -16,6 +16,7 @@ html {
 /* secondery-color: #c70d0d */
 body {
     font-family: 'Chivo', sans-serif;
+    height: 3000px;
 }
 
 /* Start Art and Culture Section */
@@ -166,6 +167,84 @@ aside.ad_aside {
     color: #A9ABB6;
 }
 /* End Sport Section */
+
+
+/* Start Subscribe Section */
+/* Ahmad Omar */
+.subscribe {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #131313;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.subscribe_title {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+.subscribe_p {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.subscribe .subscribe_form {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    position: relative;
+    margin: 45px 0 20px;
+}
+@media screen and (max-width: 900px) {
+    .subscribe .subscribe_form {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .subscribe .subscribe_form {
+        flex-direction: column;
+    }
+}
+.subscribe .subscribe_form input {
+    width: 100%;
+    border: 0;
+    height: 55px;
+    border-bottom: 2px solid #131313;
+    background-color: transparent;
+}
+.subscribe .subscribe_form input::placeholder {
+    color: #131313;
+    font-size: 1.3rem;
+}
+.subscribe .subscribe_form button {
+    border: 0;
+    height: 55px;
+    width: 140px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #c70d0d;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+@media screen and (max-width: 600px) {
+    .subscribe .subscribe_form button {
+        position: relative;
+        left: unset;
+        top: 5px;
+        width: 100%;
+    }
+}
+.subscribe .subscribe_para_bottom {
+    font-family: 'Shippori Mincho';
+    font-size: 1.27rem;
+    font-weight: 500;
+    color: #808080;
+}
+/* End Subscribe Section */
 /* End Science Update Section */
 
 html{

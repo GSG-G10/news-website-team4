@@ -19,6 +19,7 @@ body {
 }
 
 /* Start Art and Culture Section */
+/* Ahmad Omar */
 .artculture_container {
     display: flex;
     /* align-items: center; */
@@ -27,11 +28,12 @@ body {
 }
 .art_culture {
     border-top: 3px solid black;
-    padding: 25px 0 30px;
+    padding-bottom: 30px;
 }
 .section_title {
     font-size: 2.5rem;
     margin-bottom: 35px;
+    margin-top: 25px;
 }
 .cards {
     display: flex;
@@ -42,6 +44,7 @@ body {
     width: calc(100%/3);
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 25px;
 }
 @media screen and (max-width: 900px) {
     .card {
@@ -51,6 +54,8 @@ body {
 @media screen and (max-width: 600px) {
     .card {
         width: calc(100%);
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 .card:first-child {
@@ -60,7 +65,7 @@ body {
     padding-right: 0;
 }
 .card_details {
-    width: 85%;
+    width: 95%;
 }
 .card_cat {
     font-size: 1.2rem;
@@ -104,6 +109,25 @@ aside.ad_aside {
     }
 }
 /* End Art and Culture Section */
+/* /////////////////////////// */
+
+/* Start Science Update Section */
+/* Ahmad Omar */
+.science_update {
+    margin: 0 25px;
+}
+.science_update .cards {
+    flex-wrap: nowrap;
+}
+@media screen and (max-width: 900px) {
+    .science_update .cards {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* End Science Update Section */
 
 html{
 font-size: 12px;

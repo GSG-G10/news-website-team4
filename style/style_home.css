@@ -78,8 +78,13 @@ body {
     font-size: 1.9rem;
     margin: 12px 0 16px;
 }
+.art_culture .card_image img {
+    height: auto;
+}
 .card_image img {
     width: 100%;
+    object-fit: cover;
+    height: 230px;
 }
 .card_title a {
     color: #131313;
@@ -115,6 +120,7 @@ aside.ad_aside {
 /* Ahmad Omar */
 .science_update {
     margin: 0 25px;
+    border-bottom: 3px solid #000;
 }
 .science_update .cards {
     flex-wrap: nowrap;
@@ -125,8 +131,41 @@ aside.ad_aside {
     }
 }
 
+/* End Science Update Section */
 
+/* Start Sport Section */
+/* Ahmad Omar */
+.sport {
+    margin: 0 25px;
+}
+.sport .cards {
+    flex-wrap: nowrap
+}
+.sport .card_image img {
+    object-fit: cover;
+    height: 230px;
+}
+@media screen and (max-width: 900px) {
+    .sport .cards {
+        flex-wrap: wrap;
+    }
+}
+.next_previous {
+    position: absolute;
+    right: 15px;
+    top: -62px;
+}
 
+.next_previous button {
+    background-color: transparent;
+    border: 0;
+    padding: 0 6px;
+}
+.next_previous button i {
+    font-size: 2rem;
+    color: #A9ABB6;
+}
+/* End Sport Section */
 /* End Science Update Section */
 
 html{

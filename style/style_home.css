@@ -1,9 +1,109 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
+/* font-family: 'Shippori Mincho', serif; */
+
 *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: sans-serif;
 }
+html {
+    font-size: 12px;
+}
+
+/* primary-color: #131313; */
+/* secondery-color: #c70d0d */
+body {
+    font-family: 'Chivo', sans-serif;
+}
+
+/* Start Art and Culture Section */
+.artculture_container {
+    display: flex;
+    /* align-items: center; */
+    margin: 0 25px;
+    border-bottom: 3px solid black;
+}
+.art_culture {
+    border-top: 3px solid black;
+    padding: 25px 0 30px;
+}
+.section_title {
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+.cards {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+.card {
+    width: calc(100%/3);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media screen and (max-width: 900px) {
+    .card {
+        width: calc(100%/2);
+    }
+}
+@media screen and (max-width: 600px) {
+    .card {
+        width: calc(100%);
+    }
+}
+.card:first-child {
+    padding-left: 0;
+}
+.card:last-child {
+    padding-right: 0;
+}
+.card_details {
+    width: 85%;
+}
+.card_cat {
+    font-size: 1.2rem;
+    color: #c70d0d;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 18px;
+}
+.card_title {
+    font-size: 1.9rem;
+    margin: 12px 0 16px;
+}
+.card_image img {
+    width: 100%;
+}
+.card_title a {
+    color: #131313;
+    text-decoration: none;
+    line-height: 1.4;
+}
+.card_author {
+    font-family: 'Shippori Mincho', serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.see_all {
+    position: absolute;
+    right: 15px;
+    top: -60px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #131313;;
+}
+aside.ad_aside {
+    margin-left: 20px;
+    transform: translateY(3px);
+}
+@media screen and (max-width: 600px) {
+    aside.ad_aside {
+        display: none;
+    }
+}
+/* End Art and Culture Section */
 
 html{
 font-size: 12px;

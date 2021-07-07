@@ -22,7 +22,7 @@
   transform: rotateY(180deg);
 }
 .up-part i {
-  transition: all 1s;
+  transition: all 0.5s;
   font-size: 20px;
 }
 .up-part p:hover {
@@ -113,14 +113,13 @@ ul {
   }
   .up-part {
     font-size: 15px;
-    /* display: none; */
     width: 90%;
   }
   .bottom-part {
     width: 80%;
   }
   .search-bar {
-    width: 40%;
+    width: 90%;
   }
   .nav-list {
     /* width: 80%; */
@@ -130,7 +129,10 @@ ul {
     height: 50vh;
     padding: 10px 0;
     border-radius: 25px;
-    /* display: none; */
+    display: none;
+  }
+  .nav-list.active {
+    display: flex;
   }
   .nav-list a {
     color: #000;

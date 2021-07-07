@@ -215,7 +215,8 @@ ahmed omer
 .video_gallery{
 background-color: #131313;
 margin: 20px auto;
-width: 100vw;
+width: 95vw;
+margin: 0 auto;
 /* height: 630px; for test*/
 border-top: 3px solid #000;
 border-bottom: 3px solid #000;
@@ -408,3 +409,314 @@ width: 30px;
 height:30px;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------- */
+
+.slider_import_post{
+width: 90%;
+/* height: 65vh; */
+display: flex;
+margin: 20px auto;
+}
+
+.slider_content{
+width: 65%;
+height:75vh;
+position: relative;
+background-color: #C70D0D;
+}
+
+
+
+.card_slider{
+height: 100%;
+position: relative;
+display: none;
+}
+
+.card_slider.active{
+display: block;
+}
+
+.back_img_slid {
+height: 100%;
+overflow: hidden;
+}
+
+.back_img_slid img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: all 0.5s ease-in-out;
+}
+
+.card_slider:hover .back_img_slid img{
+transform: scale(1.1);
+}
+
+.front_slid{
+background: linear-gradient(to bottom, rgba(255, 255, 255, 0) ,rgba(0, 0, 0, 0.644));
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+user-select: none;
+cursor: pointer;
+}
+
+.content_front_slid{
+margin-bottom: 70px;
+padding-left: 20px;
+height: 150px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.category_slid{
+font-size: 2em;
+background-color: #e53935;
+border-radius: 4px;
+padding: 3px;
+width: 65px;
+}
+
+.title_slid{
+font-size: 2.5em;
+}
+
+.author_slid{
+font-size: 1.5em;
+}
+
+.points_slid{
+width: 80px;
+position: absolute;
+bottom: 30px;
+left: 30px;
+display: flex;
+justify-content: space-between;
+}
+
+.point_slid{
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: rgb(255, 255, 255);
+cursor: pointer;
+}
+
+.point_slid:hover{
+background-color: #e53935;
+}
+
+.point_slid.active{
+background-color: #e53935;
+}
+
+.more_post_slider{
+width: 35%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding-left: 3px;
+}
+
+.card_post_right_slid{
+position: relative;
+}
+
+.img_right_slide{
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+.img_right_slide img{
+width: 100%;
+height: 100%;
+transition: all 0.4s ease-in-out;
+}
+
+.card_post_right_slid:hover .img_right_slide img{
+transform: scale(1.1);
+}
+
+.front_card_post_right{
+position:absolute ;
+top: 0;
+height: 100%;
+width: 100%;
+background: linear-gradient(to bottom, rgba(255, 255, 255, 0) ,rgba(0, 0, 0, 0.644));
+cursor: pointer;
+color: #fff;
+display: flex;
+align-items: flex-end;
+}
+
+.content_front_slid_right{
+padding: 7px;
+height: 100px;
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+
+.content_front_slid_right .category_slid{
+font-size: 1.2em;
+border-radius: 4px;
+padding: 3px;
+width: 45px;
+}
+
+.content_front_slid_right .title_slid{
+font-size: 1.5em;
+}
+
+.content_front_slid_right .author_slid{
+font-size: 1em;
+}
+
+.title_slid,
+.author_slid{
+transition: all 0.3s;
+}
+
+.title_slid:hover,
+.author_slid:hover{
+color: #e53935;
+}
+
+
+/* start media qury screen */
+
+@media screen and (max-width: 1000px){
+.more_post_slider{
+justify-content: space-evenly;
+}
+}
+
+@media screen and (max-width: 830px){
+html{
+font-size: 8px;
+}
+
+.slider_import_post{
+flex-direction: column;
+}
+
+.slider_content{
+width: 100%;
+
+}
+
+.more_post_slider{
+width: 100%;
+height: 50%;
+flex-direction: row;
+justify-content: space-between;
+padding-left: 0px;
+}
+
+.card_post_right_slid{
+padding-top: 3px ;
+width: 49%;
+}
+
+.content_front_slid{
+height: 100px;
+}
+}
+
+/* weather section */
+
+.weather{
+background-color: #131313;
+/* height: 100px; */
+display: flex;
+width: 90%;
+margin: 0 auto;
+}
+
+.card_day_weather{
+width: 15%;
+height: 100%;
+display: flex;
+align-items: center;
+flex-direction: column;
+color: #ffffff;
+padding: 3px;
+}
+
+.title_day{
+color: #ff9e9e;
+font-size: 1.8em;
+}
+
+.te_day{
+font-size: 1.6em;
+border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.te_night{
+font-size: 1.5em;
+}
+
+.statusAll{
+display: flex;
+align-items: center;
+}
+
+.img_sky {
+
+width: 50px;
+height: 50px;
+}
+
+.img_sky img{
+width: 100%;
+height:100%;
+}
+
+
+.status_sky{
+font-size: 1.5em ;
+
+}
+
+/* media for weather */
+@media screen and (max-width: 830px){
+.weather{
+flex-wrap: wrap;
+}
+
+
+.card_day_weather{
+width: 130px;
+}
+}
+
+
+

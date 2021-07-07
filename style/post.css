@@ -129,6 +129,50 @@ ul {
 }
 /************************* End Nav Bar Section *************************/
 
+/********************* Start Post Content Style ******************/
+
+.post-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post-text {
+  width: 80%;
+  margin-top: 50px;
+}
+.post-text h2 {
+  margin: 15px 0;
+}
+.post-text p {
+  color: #646464;
+  margin: 15px 0;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social-img {
+  margin: 5px;
+}
+.img2 {
+  margin: 20px 0;
+  width: 70%;
+}
+.img1 {
+  width: 100%;
+}
+
+/******* Media Quiry *******/
+@media screen and (max-width: 500px) {
+  .post-text {
+    width: 100%;
+  }
+  .social {
+    flex-wrap: wrap;
+  }
+}
+
+/********************* End Post Content Style ******************/
 /************************* Start form in post *************************/
 .container-form {
   display: flex;

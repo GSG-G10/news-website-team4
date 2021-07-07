@@ -1,48 +1,47 @@
-
 /********************************* start style footer *************************************/
-.main-footer{
-    display: flex;
-    color: rgb(194, 185, 185);
-    background-color: #121416;
-    margin-top: 5rem;
-    justify-content: space-around;
-    align-content: center;
-    padding: 5rem 0 10rem 0;
+.main-footer {
+  display: flex;
+  color: rgb(194, 185, 185);
+  background-color: #121416;
+  margin-top: 5rem;
+  justify-content: space-around;
+  align-content: center;
+  padding: 5rem 0 10rem 0;
 }
-h3{
-    color: rgb(238, 238, 238);
+h3 {
+  color: rgb(238, 238, 238);
 }
-.main-footer p{
-    padding: 15px 0 5px 0;
+.main-footer p {
+  padding: 15px 0 5px 0;
 }
-.Copyrights p{
-    background-color: #121416;
-    color: rgb(130, 123, 123);
-    text-align: center;
-    padding: 2rem ;
-    border-top: solid thistle 0.5px;
+.Copyrights p {
+  background-color: #121416;
+  color: rgb(130, 123, 123);
+  text-align: center;
+  padding: 2rem;
+  border-top: solid thistle 0.5px;
 }
-.pragraph-hover{
-    transition: 0.2s;
-    font-size: 16px;
-    cursor: pointer;
-    height: 54px;
-    width: 100%;
+.pragraph-hover {
+  transition: 0.2s;
+  font-size: 16px;
+  cursor: pointer;
+  height: 54px;
+  width: 100%;
 }
-.pragraph-hover:hover{
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-    font-size: 16.3px;
+.pragraph-hover:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  font-size: 16.3px;
 }
-.col{
-    color: rgb(255, 255, 255);
-    cursor: pointer;
+.col {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
-@media only screen and (max-width:550px){
-    .main-footer{
-        flex-direction: column;
-        flex-wrap: wrap;
-        font-size: 18px;
-    }
+@media only screen and (max-width: 550px) {
+  .main-footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 18px;
+  }
 }
 /********************************* end style footer *************************************/

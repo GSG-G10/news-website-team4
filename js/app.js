@@ -1,3 +1,13 @@
+
+// for aLL IMG WHEN CLICK OPEN POST
+const imgs = document.querySelectorAll('img')
+imgs.forEach(img=>{
+    img.addEventListener('click',()=>{
+        location.assign('./news-website-team4/post/post.html')
+    })
+})
+
+
 //for show btn scrool to top and event
 const pop_up_to_top = document.querySelector('.pop_up_to_top')
 window.addEventListener('scroll',()=>{

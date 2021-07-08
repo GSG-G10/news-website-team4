@@ -3,7 +3,7 @@
 const imgs = document.querySelectorAll('img')
 imgs.forEach(img=>{
     img.addEventListener('click',()=>{
-        location.assign('./news-website-team4/post/post.html')
+        location.assign('./post/post.html')
     })
 })
 

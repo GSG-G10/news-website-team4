@@ -24,13 +24,13 @@ pop_up_to_top.addEventListener('click',()=>{
 // update time and date
 
 let hour =new Date().getHours()
-let minut =new Date().getMinutes()
+let minutes =new Date().getMinutes()
 let format = hour >=12 ? 'PM':'AM'
 let month =new Date().getMonth() +1
 let today =new Date().getDate()
 let year =new Date().getFullYear()
-document.querySelector('.time_is').innerHTML = `${hour}:${minut} ${format}`
-document.querySelector('.date_today').innerHTML = `${today}/${month}/${year}`
+document.querySelector('.time_is').textContent = `${hour}:${minutes} ${format}`
+document.querySelector('.date_today').textContent = `${today}/${month}/${year}`
 
 
 // slider header start

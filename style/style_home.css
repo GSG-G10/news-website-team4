@@ -16,6 +16,7 @@ html {
 /* secondery-color: #c70d0d */
 body {
   font-family: 'Chivo', sans-serif;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -1003,7 +1004,7 @@ ibrahim jomaa
 /* End Most and Related News Section */
 
 /* last news */
-.last_news {
+.last_news_im {
   margin-top: 5px;
   width: 100%;
   background-color: #131313;
@@ -1018,12 +1019,18 @@ ibrahim jomaa
 
 .news_now {
   min-width: 100%;
-  font-size: 2em;
+  font-size: 1em;
   padding-left: 20px;
   animation: slideLastNew 20.5s ease-in-out 1s infinite;
   color: #fff;
 }
 
+
+@media screen and (max-width: 600px){
+  .news_now span{
+    font-size: 12px;
+  }
+}
 @keyframes slideLastNew {
   0% {
     transform: translateX(0%);
@@ -1052,10 +1059,11 @@ ibrahim jomaa
   height: 100%;
   right: 0;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:space-evenly ;
 }
 
 /* end last news */
@@ -1305,6 +1313,7 @@ ibrahim jomaa
   flex-direction: column;
   color: #ffffff;
   padding: 3px;
+  margin:  0 auto;
 }
 
 .title_day {
@@ -1349,4 +1358,8 @@ ibrahim jomaa
   .card_day_weather {
     width: 130px;
   }
+}
+
+img{
+  cursor: pointer;
 }
